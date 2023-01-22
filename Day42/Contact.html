@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Contact Details</h1>
+    <ul>
+        <p><li>837-3837-3388</li></p>
+        <p><li>sunjoo@sunjoo.com</li></p>
+        <hr>
+        <form action="mailto:bc310902@gmail.com" method="post" enctype="text/plain">
+            <!-- form의 action이라는 속성 때문에 submit 버튼을 누르면 원래의 홈페이지로 되돌아옴. 따라서 action을 mailto로 변경.
+            또한, method는 사용자가 입력 필드에 입력한 내용을 이메일 클라이언트로 전송한다는 의미.
+            enctype은 이메일 전송시 일반 텍스트 메시지로 보이도록 변경해줌. -->
+            <label>Your Name : </label>
+            <input type="text" name="yourName" value=""><br>
+            <label>Your Email : </label>
+            <input type="email" name="yourEmail" value=""><br>
+            <!-- input의 name 필드에 yourName or yourEmail을 넣음으로써 프로그램 자체적으로 유효성 검사를 할 수 있게 해줌. -->
+            <label>Your Messsage : </label>
+            <textarea name="name" rows="10" cols="80"></textarea>
+            <input type="submit" name=""><br>
+            <label for="start">Start date: </label>
+            <input type="date" min="2023-01-23" value="2023-05-31">
+
+        </form>
+    </ul>
+</body>
+</html>
